@@ -6,10 +6,16 @@ Android Stuido 3.1.3 ve Google Play Services 28.0.0 kullanılmıştır.
 
 Api olarak  [JSONPlaceholder](https://jsonplaceholder.typicode.com/) kullanılmıştır.
 
+
+Detaylı anlatıma  [Android Türkiye Medium](https://medium.com/android-t%C3%BCrkiye/android-uygulamada-retrofit2-ve-rxjava2-kullanarak-web-servisten-veri-%C3%A7ekme-91568a31a5fb) sayfasından ulaşabilirsiniz.
+
 <img src="https://github.com/cagataymuhammet/AndroidJavaRestApiExample/blob/master/sh.png"/>
 
-dependencies
+
+# dependencies
+
 ```gradle
+
 dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -38,7 +44,7 @@ dependencies {
 
 ```
 
-Service.java
+# Service.java
 ```java
 
 public class Service {
@@ -72,7 +78,7 @@ public class Service {
 }
 ```
 
-ServiceApi.class
+# ServiceApi.class
 ```java
 
 public interface ServiceApi {
@@ -125,7 +131,7 @@ public class UserModel {
 ```
 
 
-Servise bağlanıp veri çekmek
+# Servise bağlanıp veri çekmek
 ```java
 new Service().getServiceApi().getUsers().
                 subscribeOn(Schedulers.io())
